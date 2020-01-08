@@ -1,0 +1,22 @@
+{
+  "name": "to-do-help",
+  "version": "1.0.0",
+  "description": "Made to help me manage my stuff",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesterOrNot/To-Do-Help.git"
+  },
+  "keywords": [
+    "Notes"
+  ],
+  "author": "Sean Hellum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JesterOrNot/To-Do-Help/issues"
+  },
+  "homepage": "https://github.com/JesterOrNot/To-Do-Help#readme"
+}
