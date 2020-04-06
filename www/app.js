@@ -2,10 +2,12 @@ var createTodo = function(todo) {
   let listItem = document.createElement("li");
   let checkBox = document.createElement("input");
   checkBox.type = "checkbox";
+  checkBox.onclick = checkItemOff;
   let label = document.createElement("label");
   label.innerHTML = todo;
   let deleteButton = document.createElement("button");
   deleteButton.className = "delete";
+  deleteButton.innerText = "Delete";
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(deleteButton);
@@ -25,4 +27,9 @@ addButton.onclick = function() {
     list.appendChild(listItem);
     input.value = "";
   }
+}
+
+function checkItemOff(params) {
+    let parent = this.parentNode;
+    parent.classList.toggle("checked");
 }
