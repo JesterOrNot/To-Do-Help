@@ -2,5 +2,4 @@ ports:
   - port: 8000
     onOpen: open-preview
 tasks:
-  - init: cargo run
-    command: echo 'start script'
+  - command: rustup default nightly && cargo run
