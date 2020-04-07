@@ -8,6 +8,7 @@ var createTodo = function(todo) {
   let deleteButton = document.createElement("button");
   deleteButton.className = "delete";
   deleteButton.innerText = "Delete";
+  deleteButton.onclick = deleteItem;
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(deleteButton);
@@ -29,7 +30,13 @@ addButton.onclick = function() {
   }
 }
 
-function checkItemOff(params) {
+function checkItemOff() {
     let parent = this.parentNode;
     parent.classList.toggle("checked");
+}
+
+function deleteItem() {
+    var parent = this.parentNode;
+    var grandParent = parent.parentNode;
+    grandParent.removeChild(parent);
 }
